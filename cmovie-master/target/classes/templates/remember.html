@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- head -->
+<div th:replace="~{/fragment/common-fragment :: head(登录)}"></div>
+
+<body>
+<div class="wrapper">
+    <!-- Header section -->
+    <div th:replace="~{/fragment/common-fragment :: header}"></div>
+
+    <!-- Main content -->
+    <form id="login-form" class="login" method="post" novalidate="">
+        <p class="login__title">
+            找回密码 <br/><span class="login-edition">欢迎来到淘淘票</span>
+        </p>
+
+        <div class="field-wrap">
+            <input
+                    type="email"
+                    placeholder="请输入邮箱"
+                    name="email"
+                    class="login__input"
+            />
+            <input
+                    type="text"
+                    placeholder="请输入验证码"
+                    name="text"
+                    class="login__input"
+            />
+            <input
+                    type="text"
+                    placeholder="请输入新密码"
+                    name="text"
+                    class="login__input"
+            />
+            <input
+                    type="text"
+                    placeholder="再次确认新密码"
+                    name="text"
+                    class="login__input"
+            />
+        </div>
+
+        <div class="login__control">
+            <button type="submit" class="btn btn-md btn--warning btn--wider">
+                登录
+            </button>
+        </div>
+    </form>
+
+    <div class="clearfix"></div>
+</div>
+
+<div th:replace="~{/fragment/common-fragment :: footer}"></div>
+
+<!-- open/close -->
+<div th:replace="~{/fragment/common-fragment :: pop}"></div>
+
+<!-- JavaScript-->
+<div th:replace="~{/fragment/common-fragment :: script}"></div>
+</body>
+</html>
