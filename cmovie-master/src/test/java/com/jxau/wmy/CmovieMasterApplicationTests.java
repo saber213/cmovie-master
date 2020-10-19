@@ -18,15 +18,6 @@ public class CmovieMasterApplicationTests {
     @Test
     public void contextLoads() {
 
-        SimpleMailMessage mailMessage = new SimpleMailMessage();
-
-        mailMessage.setSubject("王哥真帅");
-        mailMessage.setText("你王哥是最帅的！！！");
-
-        mailMessage.setTo("1551573261@qq.com");
-        mailMessage.setFrom("1627844806@qq.com");
-
-        mailSender.send(mailMessage);
     }
 
 }
